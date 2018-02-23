@@ -6,7 +6,6 @@ from flask import request
 import redis
 from redisgraph import Node, Edge, Graph
 app = Flask(__name__)
-app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
 
 r = redis.Redis(host='localhost',db=0)
